@@ -29,3 +29,16 @@
  - Projeto Cadastro Simples 
  - Projeto para Envio de E-mails com Workers 
 
+### Comandos
+- Listar imagens:\ docker images
+- Remover imagem:\ docker rmi <IdImage ou NameImage>
+- Executar container:\ docker start <IdContainer ou NameContainer>
+- Parar container:\ docker stop <IdContainer ou NameContainer>
+- Remover container:\ docker stop <IdContainer ou NameContainer>
+- Listar containers em execução:\ docker ps
+- Listar containers em execução e parados:\ docker ps -a
+
+### Criar containers de Bancos de Dados
+- $ docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+- $ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+- $ docker run --name some-mongo -d mongo:tag
